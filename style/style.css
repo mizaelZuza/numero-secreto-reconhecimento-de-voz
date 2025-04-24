@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --bg-color: #3674B5;
+    --bg-color-secundary: #578FCA;
+    --primary-color: #A1E3F9;
+    --secondary-color: #E5E5E5;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 5em;
+}
+
+h2{
+    font-size: 4em;
+}
+
+h3{
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.mensagem{
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+.mensagem-acerto{
+    font-size: 2em;
+}
+
+.box{
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+.dica{
+
+    display: inline-block;
+    font-size: 3em;
+    padding: 10 px;
+    margin: 20px;
+}
+
+.btn-jogar{
+    padding: 8px 16px;
+    border: 0;
+    background-color: var(--bg-color-secundary);
+    border-radius: 8px;
+    margin-top: 20px;
+    color: var(--primary-color);
+    font-size: 1.5em;
+    cursor: pointer;
+}
