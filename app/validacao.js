@@ -1,6 +1,12 @@
 import { menorValor, maiorValor, numeroSecreto } from "./sortearNumero.js";
-import { exibirMensagemNaTela, chuteCorreto, chuteErrado, exibirMaiorOuMenorQuePermitido } from "./construirHTML.js";
+import { exibirMensagemNaTela, chuteCorreto, chuteErrado, exibirMaiorOuMenorQuePermitido, exibirMensagemGameOver } from "./construirHTML.js";
 function verificarValorValido(chute) {
+
+    if (chute == "game over") {
+        finalizarJogo();
+        return
+    }
+
     const numero = +chute;
 
     if (verificarValorInvalido(numero)) {
@@ -30,4 +36,7 @@ function numeroMaiorOuMenorQuePermitido(numero) {
     return numero > maiorValor || numero < menorValor;
 };
 
+function finalizarJogo() {
+    return exibirMensagemGameOver();
+};
 export default verificarValorValido;

@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/style.css">
     <title>Jogo do número secreto</title>
 </head>
+
 <body>
+
     <h1>Acerte o número secreto</h1>
 
-    <h3>O número secreto está entre <span id="menor-valor">0</span> e <span id="maior-valor">100</span></h3>
-    
-    <div id="chute" class="mensagem">
-        <!-- <div>Você disse: </div>
-        <span class="box">20</span>
-        <div class="dica">O número secreto é maior <i class="fa-regular fa-circle-up"></i></div>
-        <div class="dica">O número secreto é menor <i class="fa-regular fa-circle-down"></i></div> -->
-    </div>
-    <div id="resultado">
+    <h3>O número secreto está entre <span id="menor-valor"></span> e <span id="maior-valor"></span></h3>
 
+    <div class = "container">
+        <div id="chute" class="mensagem">
+        </div>
+        <div id="resultado" class="resultado">
+        </div>
     </div>
-    <script type="module" src="./app/sortearNumero.js"></script>
-    <script type="module" src="./app/reconhecimentoDeVoz.js"></script>
-    <!-- <script type="module" src="./app/validacao.js"></script> -->
+    <script type="module" src="./app/app.js"></script>
 </body>
+
 </html>

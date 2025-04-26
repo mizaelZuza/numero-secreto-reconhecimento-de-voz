@@ -19,4 +19,6 @@ function onSpeak(e) {
 
 };
 
+
+
 recognition.addEventListener('end', () => recognition.start());
